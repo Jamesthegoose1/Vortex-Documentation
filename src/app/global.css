@@ -1,6 +1,84 @@
 @import 'tailwindcss';
+
 @import 'fumadocs-ui/css/neutral.css';
+
 @import 'fumadocs-ui/css/preset.css';
+
+/* Vortex theme */
+:root {
+  --background: #000000;
+  --foreground: #f5f5f5;
+
+  --primary: #7c3aed;
+  --primary-foreground: #ffffff;
+
+  --accent: #7c3aed;
+  --accent-foreground: #ffffff;
+
+  --border: #1f1f1f;
+  --muted: #111111;
+  --muted-foreground: #a1a1aa;
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #f5f5f5;
+
+  --primary: #7c3aed;
+  --primary-foreground: #ffffff;
+
+  --accent: #7c3aed;
+  --accent-foreground: #ffffff;
+
+  --border: #1f1f1f;
+  --muted: #0a0a0a;
+  --muted-foreground: #a1a1aa;
+}
+/* css styled to vortex */
+/* Page */
+html,
+body {
+  background: #000000;
+  color: #f5f5f5;
+}
+
+::selection {
+  background: #7c3aed;
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2e1065;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7c3aed;
+}
+
+a {
+  transition:
+    color 150ms ease,
+    opacity 150ms ease;
+}
+
+a:hover {
+  color: #7c3aed;
+}
+
+.vortex-glow {
+  box-shadow:
+    0 0 30px rgba(124, 58, 237, 0.2),
+    0 0 80px rgba(124, 58, 237, 0.08);
+}
 
 html {
   scrollbar-gutter: stable;
